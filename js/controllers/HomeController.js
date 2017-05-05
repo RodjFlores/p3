@@ -115,16 +115,10 @@ app.controller('HomeController', ['$scope', function($scope) {
       $scope.incDislikes = function(movie){
             movie.dislikes++;
       };
-      $scope.timeText = function(){
-            /*var h = Math.floor(runtime/60);
-            var m = runtime%60;
+      $scope.timeText=function(){
 
-            var time = h + "h" + m +"m";
-            return time;*/
-            
-            return "AHAHAH";
-      };
-
+            return 5;
+      }
 	
 	
 	

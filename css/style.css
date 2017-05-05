@@ -65,10 +65,11 @@ body {
 
 /* This shapes your IMDB score area */
 .score {
+
     background-color: #39D1B4;
     color: #fff;
     font-size: 18px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
     font-weight: 200;
     height: 80px;
     line-height: 80px;
@@ -78,6 +79,10 @@ body {
     top: 50px;
     right: 25px;
 }
+.circle{
+    border-radius: 50%;
+}
+
 
 /* This contains your like and dislike buttons */
 .social {
@@ -119,7 +124,25 @@ body {
 }
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+.green {
+    background-color: #008700;
+    color: #ffffff;
+}
+.green:hover{
+    background-color: #9edd87;
+    color: #008700;
+    transition: .5s;
+}
+.red {
+    background-color: #f65a5b;
+    color: #ffffff;
+}
+.red:hover{
+    background-color: #fdd6d6;
+    color: #F65A5B;
+    transition: .5s;
 
+}
 
 
 
