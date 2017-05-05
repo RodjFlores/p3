@@ -97,7 +97,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
-	
+	$scope.title = "IMDB Rod's Top 8 Movies";
+      $scope.owner =  " Rod Flores";
+      $scope.github= "https://github.com/RodjFlores/p3";
 	
 	
 	
@@ -107,7 +109,22 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
-	
+	$scope.incLikes = function(movie){
+            movie.likes++;
+      };
+      $scope.incDislikes = function(movie){
+            movie.dislikes++;
+      };
+      $scope.timeText = function(){
+            /*var h = Math.floor(runtime/60);
+            var m = runtime%60;
+
+            var time = h + "h" + m +"m";
+            return time;*/
+            
+            return "AHAHAH";
+      };
+
 	
 	
 	
