@@ -88,7 +88,50 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},
+    { 
+      title:      'Zootopia', 
+      iscore:     10,
+      rating:     'PG',
+      runtime:    108,
+      released:   new Date('2016', '03', '04'),
+      country:    'USA',
+      posters:    ['img/zoo.jpg','img/zoo2.jpg'],
+      imdb:       'http://www.imdb.com/title/tt2948356/',
+      website:    'https://www.rottentomatoes.com/m/zootopia/',
+      likes:      999,
+      dislikes:   1,
+      posterindex: 0
+      },
+    { 
+      title:      'Lilo and Stich', 
+      iscore:     10,
+      rating:     'PG',
+      runtime:    85,
+      released:   new Date('2002', '07', '21'),
+      country:    'USA',
+      posters:    ['img/lilo.jpg','img/lilo2.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0275847/?ref_=nv_sr_1',
+      website:    'http://www.disney.com/',
+      likes:      990,
+      dislikes:   1,
+      posterindex: 0
+      },
+{ 
+      title:      'Troy', 
+      iscore:     10,
+      rating:     'R',
+      runtime:    163,
+      released:   new Date('2004', '05', '14'),
+      country:    'USA',
+      posters:    ['img/troy.jpg','img/troy2.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0332452/?ref_=nv_sr_1',
+      website:    'http://www.livescience.com/38191-ancient-troy.html',
+      likes:      9999999,
+      dislikes:   0,
+      posterindex: 0
+      }
+
 	
 	
   ];
@@ -115,10 +158,13 @@ app.controller('HomeController', ['$scope', function($scope) {
       $scope.incDislikes = function(movie){
             movie.dislikes++;
       };
-      $scope.timeText=function(){
+      $scope.timeText=function(runtime){
+            var h = Math.floor(runtime/60);
+            var m = runtime%60;
 
-            return 5;
-      }
+            var time = h + "h" + m +"m";
+            return time;
+      };
 	
 	
 	
