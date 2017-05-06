@@ -165,6 +165,15 @@ app.controller('HomeController', ['$scope', function($scope) {
             var time = h + "h" + m +"m";
             return time;
       };
+      $scope.posterClick = function(movie){
+            if(movie.posterindex >= movie.posters.length-1){
+                  movie.posterindex = 0;
+            }
+            else{
+                  movie.posterindex++;
+            }
+            
+      };
 	
 	
 	
